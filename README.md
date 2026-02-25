@@ -1,16 +1,53 @@
-# beespoke_store_app
+# 🛍️ Beespoke AI Personalized Store
 
-A new Flutter project.
+## 📌 Approach
+The app is designed as a **personalized e-commerce browsing experience**, allowing users to:  
+- Explore products  
+- Like items  
+- Filter by category  
+- View browsing history  
 
-## Getting Started
+The focus was on creating a **smooth and intuitive shopping flow**, similar to real-world e-commerce platforms.  
 
-This project is a starting point for a Flutter application.
+The UI is built using a **grid-based product feed** with:  
+- Category filtering  
+- Search functionality  
+- Dedicated screens for liked items and browsing history  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ⚙️ State Management Choice
+**Provider** was used for state management because:  
+- Lightweight and scalable  
+- Easy separation of UI and business logic  
+- Efficient rebuild handling  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Providers used:**  
+- `ProductProvider` → API data  
+- `PreferenceProvider` → likes/dislikes  
+- `HistoryProvider` → browsing history  
+
+---
+
+## 💾 Data Persistence Method
+**Hive** was used for local persistence because:  
+- Fast and lightweight  
+- Offline support  
+- Simple key-value storage  
+- Perfect for storing user preferences and browsing history  
+
+---
+
+## 🚀 What I Would Improve With More Time
+- AI-based product recommendation engine  
+- Cart and checkout flow  
+- Skeleton loading animations  
+- Dark mode  
+- Firebase sync for multi-device persistence  
+- Better product detail animations  
+- Pagination and caching optimization  
+
+---
+
+## ⏱️ Approximate Time Spent
+I have spent **approximately 8–10 hours** developing and testing this app.
